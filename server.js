@@ -15,12 +15,12 @@ const PORT = process.env.PORT
 // Connect to MongoDB
 connectDB();
 
-// Cross Origin Resource Sharing
-app.use(cors(corsOptions));
-
 // Handle options credentials check - before CORS!
 // and fetch cookies credentials requirement
 app.use(credentials);
+
+// Cross Origin Resource Sharing
+app.use(cors(corsOptions));
 
 
 
